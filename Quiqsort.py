@@ -1,6 +1,6 @@
 import random
 
-class Quick(object):
+'''class Quick(object):
     def particao(self, a, ini, fim):
         pivo = a[fim-1]
         #pivo = a[9]
@@ -22,8 +22,9 @@ class Quick(object):
             pp = self.randparticao(a, ini, fim)
             self.quickSort(a, ini, pp)
             self.quickSort(a, pp+1,fim)
+        print (a)
         return a
-
+'''
     def randparticao(self,a,ini,fim):
         rand = random.randrange(ini,fim)
         aux = a[fim-1]
@@ -34,6 +35,6 @@ class Quick(object):
 
 a = [0,8,0,5,1,9,9,8,1,8,1,1,1,0,0,0,3,9]
 
-print (a)
+print (f"{a}\n")
 q = Quick()
 print (q.quickSort(a,0,len(a)))
