@@ -3,7 +3,6 @@ import random
 class Quick(object):
     def particao(self, a, ini, fim):
         pivo = a[fim-1]
-        #pivo = a[9]
         start = ini
         end = ini
         for i in range(ini,fim):
